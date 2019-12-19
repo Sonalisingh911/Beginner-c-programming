@@ -1,13 +1,13 @@
-
+/*Write a c program to find ma.bet two no.*/
 #include<stdio.h>
 int main()
-{
-float c,f;
-printf("enter value in temp");
-scanf("%f",&f);
-c = 5.0/9.0*(f-32);
-printf("in centi=%f",c);
-printf("in farenht=%f",f);
+{int a,b,max;
+printf("enter two num");
+scanf("%d%d",&a,&b);
+if(a>b)
+max=a;
+else
+max=b;
+printf("max num=%d",max);
 return 0;
-
 }
