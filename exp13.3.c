@@ -3,15 +3,12 @@ int main()
 { int a,b,c,max;
 printf("enter num to compare");
 scanf("%d%d%d",&a,&b,&c);
-if(a>b)
-{if(a>c)
+if(a>b && a>c)
 max=a;
-else
-max=c;}
-else
-{if(b>c)
+if(b>a && b>c)
 max=b;
-else
-max=c;}
-printf("max value=%d",max);
+if(c>a && c>b)
+max=c;
+printf("max num=%d",max);
 return 0;}
+
