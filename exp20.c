@@ -1,11 +1,12 @@
-/* To calculate area of an eq. triangle*/
 #include<stdio.h>
-#include<math.h>
 int main()
-{ float a,area;
-printf("enter sides");
-scanf("%f",&a);
-area=*a;
-printf("area=%f",area);
-return 0;
+{int a[10],b[10],c[10],i;
+printf("enter array size");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+ scanf("%d",&a[i]);
+for(i=0;i<;i++)
+       if(a[i]%2==0)
+
 }
+

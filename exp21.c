@@ -1,15 +1,16 @@
 #include<stdio.h>
-#include<conio.h>
 int main()
-{
-int a,b,c,d,e,total,avg,per;
-printf("enter marks of 5 sub");
-scanf("%d%d%d%d%d%",&a,&b,&c,&d,&e);
-total=a+b+c+d+e;
-avg=total/5;
-per=total*0.2;
-printf("enter total=%d",total);
-printf("enter avg=%d",avg);
-printf("enter per=%d",per);
+{int a[10],i,n,temp;
+printf("enter array size");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+ scanf("%d",&a[i]);
+temp=a[n-1];
+for(i=n-1;i>0;i--)
+       a[i]=a[i-1];
+a[0]=temp;
+printf("new arrey\n");
+for(i=0;i<n;i++)
+ printf("%d\t",a[i]);
 return 0;
 }

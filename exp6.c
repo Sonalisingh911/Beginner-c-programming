@@ -1,13 +1,15 @@
 #include<stdio.h>
 int main()
-{int r,s,a;
-printf("enter age of Ram,Shyam & Ajay");
-scanf("%d%d%d",&r,&s,&a);
-if(a<r && a<s)
-printf("Ajay is Youngest,age=%d",a);
-else if(r<s && r<a)
-printf("Ram is Youngest,age=%d",r);
-else
-printf("shyam is youngest,age=%d",s);
+{int a[10],i,l=0,b=0;
+printf("enter");
+for(i=0;i<10;i++)
+ scanf("%d",&a[i]);
+for(i=0;i<10;i++)
+ {if(a[i]%2==0)
+  l++;
+  else
+   b++;
+  }
+  printf("odd=%d even=%d",l,b);
 return 0;
 }

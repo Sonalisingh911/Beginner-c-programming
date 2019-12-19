@@ -1,13 +1,15 @@
-/*Write a c program to find ma.bet two no.*/
 #include<stdio.h>
 int main()
-{int a,b,max;
-printf("enter two num");
-scanf("%d%d",&a,&b);
-if(a>b)
-max=a;
-else
-max=b;
-printf("max num=%d",max);
+{int a[5],i,max=0,min=0;
+printf("enter");
+for(i=0;i<5;i++)
+ scanf("%d",&a[i]);
+for(i=0;i<5;i++)
+ {if(a[i]>max)
+   max=a[i];
+  if(a[i]<)
+   min=a[i];
+}
+printf("max=%d min=%d",max,min);
 return 0;
 }

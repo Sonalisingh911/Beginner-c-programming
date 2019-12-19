@@ -1,15 +1,11 @@
-
 #include<stdio.h>
-#include<conio.h>
 int main()
-{
-int qty,dis=0;
-float price,total;
-printf("enter Qty. and price");
-scanf("%d%f",&qty,&price);
-if(qty>1000)
-dis=10;
-total=(qty*price)-(qty*price*(dis/100));
-printf("total expences=%f",total);
+{int a[5],i;
+printf("enter");
+for(i=0;i<5;i++)
+ scanf("%d",&a[i]);
+printf("arrey");
+for(i=0;i<5;i++)
+ printf("%d",a[i]);
 return 0;
 }
